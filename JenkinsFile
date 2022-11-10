@@ -2,7 +2,7 @@ pipeline {
 agent any
 
 stages {
-   stages('Compile Stage'){
+   stage('Compile Stage'){
    steps
      {
    withMaven(maven : 'MVN_HOME')
