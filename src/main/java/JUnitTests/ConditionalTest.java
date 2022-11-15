@@ -21,7 +21,7 @@ public class ConditionalTest {
         System.out.println("Execute this test only in WINDOWS machine");
     }
     @Test
-    @EnabledOnJre(JRE.JAVA_19)
+    @EnabledOnJre(JRE.JAVA_16)
     public void conditiononJRE()
     {
         System.out.println("Execute this test only for Java 17");

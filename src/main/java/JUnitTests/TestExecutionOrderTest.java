@@ -9,7 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 //@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 //Ordre alphanumerique
 //@TestMethodOrder(MethodOrderer.Alphanumeric.class)
-//Aléatoire
+
 @TestMethodOrder(MethodOrderer.Random.class)
 public class TestExecutionOrderTest {
 

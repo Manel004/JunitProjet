@@ -6,7 +6,7 @@ import org.junit.jupiter.api.*;
 
 public class AnnotationsTest {
 
-    //Calculator calc=new Calculator(); remplacé par la méthode ci-dessous
+    //Calculator calc=new Calculator();
 
     Calculator calc;
 
