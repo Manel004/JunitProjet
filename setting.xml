@@ -1,6 +1,0 @@
-<server>
-    <id>internal.repo</id>
-    <username>maven</username>
-    <password>foobar</password>
-</server>
-
