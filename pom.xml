@@ -8,6 +8,57 @@
     <artifactId>JUnitTests</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+
+    <plugins>
+
+    <plugin>
+
+    <artifactId>maven-deploy-plugin</artifactId>
+
+    <version>3.0.0-M1</version>
+
+    <executions>
+
+    <execution>
+
+        <id>default-deploy</id>
+
+        <configuration>
+
+            <skip>true</skip>
+
+        </configuration>
+
+    </execution>
+
+    <execution>
+
+    <id>deploy-node-modules-artifact</id>
+
+    <phase>deploy</phase>
+
+    <goals>
+
+        <goal>deploy-file</goal>
+
+    </goals>
+        </execution>
+
+    </executions>
+    <configuration>
+
+    <file>${file}</file>
+
+    <groupId>${groupId}</groupId>
+
+    <artifactId>${artifactId}</artifactId>
+    </configuration>
+
+        </plugin>
+        </plugins>
+    </build>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -22,13 +73,17 @@
     </distributionManagement>
 
 
+
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <dependency>
+
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.10.1</version>
+
+
 
         </dependency>
 
