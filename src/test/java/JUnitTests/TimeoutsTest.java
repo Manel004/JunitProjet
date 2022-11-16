@@ -20,7 +20,7 @@ public class TimeoutsTest {
     @Test
     @Timeout(5)
     public void timeoutTest1() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(5);
+        TimeUnit.SECONDS.sleep(3);
         System.out.println("Test passes with in the time");
     }
 
