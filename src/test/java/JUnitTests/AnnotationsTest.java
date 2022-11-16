@@ -45,7 +45,7 @@ public class AnnotationsTest {
     }
     @Test
     @DisplayName("Adding Positive and Negative Numbers")
-    @Disabled("Not executing")
+
     public void testMethod3()
     {
         int sum=calc.add(-20,30);

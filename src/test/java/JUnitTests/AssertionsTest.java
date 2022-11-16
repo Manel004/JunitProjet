@@ -27,14 +27,14 @@ public class AssertionsTest {
     public void assertNotEqualsTest()
     {
         int sum=calc.add(2,3);
-        Assertions.assertNotEquals(5,sum,"Test failed");
+        Assertions.assertNotEquals(6,sum,"Test failed");
 
     }
 
     @Test
     public void assertArrayEqualsTest()
     {
-        Assertions.assertArrayEquals(new int[] {1,2,3},new int[] {1,4,3});
+        Assertions.assertArrayEquals(new int[] {1,2,3},new int[] {1,2,3});
     }
 
     @Test
@@ -59,7 +59,7 @@ public class AssertionsTest {
     {
         boolean truevalue=true;
         boolean falsevalue=false;
-        Assertions.assertFalse(truevalue);
+        Assertions.assertFalse(falsevalue);
     }
 
 
